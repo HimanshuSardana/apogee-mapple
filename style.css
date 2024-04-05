@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 75px;
+    padding-top: 20px;
+}
+
+.navbar .brand img {
+    height: auto;
+    width: 30%;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    gap: 15%;
+    list-style: none;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .nav-links button:nth-child(1) {
+    background: #fff;
+    color: #f4a261;
+    width: 100px;
+    padding: 10px 0;
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+}
+
+.navbar .nav-links button:nth-child(2) {
+    background: #f4a261;
+    color: #fff;
+    border: none;
+    width: 120px;;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.hero .left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero .left h3 {
+    font-size: 50px;
+    line-height: 4rem;
+}
+
+.hero .left span  {
+    color: #f4a261;
+}
+
+.hero .left .tagline {
+    color: grey;
+    width: 70%;
+    font-size: 18px;
+}
+
+.hero .left .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero .left .buttons button {
+    padding: 10px 20px;
+}
+
+.hero .left .buttons button.primary {
+    color: #fff;
+    border: 1px solid #f4a261;
+    background: #f4a261;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.hero .left .buttons button.secondary {
+    color: #f4a261;
+    border: 1px solid #f4a261;
+    background: #fff;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.hero .right {
+    flex: 1;
+}
+
+.hero .right img {
+    height: auto;
+    width: 100%;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    width: 100%;
+    padding-top: 3%;
+    background-color: #f4a261;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.testimonials h3 span {
+    color: #f4a261;
+    background-color: #fff;
+    padding: 0px 5px;
+}
+
+.testimonials .rolling-cards {
+    padding: 5% 10%;
+    display: flex;
+    gap: 5%;
+}
+
+.testimonials .amazon {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    -webkit-mask: url(logo.svg) no-repeat center;
+    mask: url('https://www.mapmyindia.com/images/client_logo/amazon-a.svg') no-repeat center
+}
+
+.testimonials img {
+    filter: grayscale(100%) hue-rotate(70deg);
+}
+
+.testimonials p {
+    padding-bottom: 3%;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 5% 10%;
+}
+
+.products h3 {
+    font-size: 35px;
+}
+
+.products p {
+    width: 50%;
+    color: grey;
+}
+
+.products .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.products .row {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.products .card {
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px 20px;
+    flex: 1;
+}
+
+.products .card p {
+    width: 100%;
+}
+
+.products .card a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.products .card h3 {
+    font-size: 20px;
+}
+
+/* SOLUTIONS */
+.solutions {
+    width: 100%;
+    padding: 5% 10%;
+    background-color: #f4a261;
+    color: #fff;
+}
+
+.solutions h3 {
+    text-align: right;
+    font-size: 35px;;
+}
+
+.solutions .solutions-container {
+    display: flex;
+}
+
+.solutions .left {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.solutions .left .card span {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #f4a261;
+    padding: 5px 10px;
+    border-radius: 8px;
+    padding-bottom: 5px;
+    margin-bottom: 100px;
+}
+
+.solutions .left .card h5 {
+    font-size: 25px;
+}
+
+.solutions .left .card {
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.solutions .left .card button {
+    color: #f4a261;
+    background-color: #fff;
+    border: none;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.solutions .right {
+    flex: 4;
+    text-align: right;
+}
+
+/* REGISTRATION PROMPT */
+.reg-prompt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.reg-prompt h3 {
+    font-size: 30px;
+}
+
+.reg-prompt .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reg-prompt .buttons button:nth-child(2) {
+    background-color: #fff;
+    border: 1px solid #f4a261;
+    color: #f4a261;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.reg-prompt .buttons button:nth-child(1) {
+    background-color: #f4a261;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background-color: #f4a261;
+    color: #fff;
+    display: flex;
+    gap: 10%;
+    padding: 2% 10%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.newsletter .logo {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter .logo img {
+    height: auto;
+    width: 70%;
+}
+
+.newsletter .contact {
+    flex: 1;
+}
+
+.newsletter .contact span {
+    color: #f4a261;
+}
+
+.newsletter .signup {
+    flex: 1;
+}
+
+.newsletter .signup input {
+    border: 0;
+    padding: 10px 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.newsletter .signup button {
+    color: #f4a261;
+    background-color: #fff;
+    border: 0;
+    width: 60px;
+    padding-right: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.newsletter .signup .input {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .testimonials .rolling-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .testimonials img {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        width: 30%;
+    }
+
+    .solutions .solutions-container {
+        flex-direction: column;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .newsletter .contact {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .products p {
+        width: 100%;
+    }
+
+    .products .row {
+        flex-direction: column;
+    }
+}
